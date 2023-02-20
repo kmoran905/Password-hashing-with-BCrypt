@@ -11,11 +11,11 @@ app = Flask(__name__,template_folder='template')
   
 app.secret_key = 'apex'
 
-#Configuration
-app.config['MYSQL_HOST'] = 'sql9.freemysqlhosting.net'
-app.config['MYSQL_USER'] = 'sql9596302'
-app.config['MYSQL_PASSWORD'] = 'eFtTaecLY8'
-app.config['MYSQL_DB'] = 'sql9596302'
+#Configuration. Add your own MYSQL credentials here.
+app.config['MYSQL_HOST'] = ''
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 
   
 mysql = MySQL(app)
